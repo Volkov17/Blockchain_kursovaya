@@ -64,7 +64,7 @@ int main() {
 
       volkovCoin.checking_signature();
       
-      connect_with_server(filename1);
+      connect_with_server(filename1)
 
 //      if (volkovCoin.checking_signature()){
 //          std::cout << " valid" << std::endl ;
