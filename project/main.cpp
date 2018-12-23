@@ -12,7 +12,7 @@ int main() {
 
       Blockchain volkovCoin(0); //создаем монету и генерим гениз блок
 
-      volkovCoin.get_latest_block().print_trans();
+    //  volkovCoin.get_latest_block().print_trans();
       std::cout << std::endl;
       volkovCoin.print_chain();
 
