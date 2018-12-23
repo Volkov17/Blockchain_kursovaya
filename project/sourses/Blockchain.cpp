@@ -1,5 +1,5 @@
 
-#include "Blockchain.h"
+#include "Blockchain.hpp"
 
 Blockchain::Blockchain(int gen) {
     if (gen == 0) {
