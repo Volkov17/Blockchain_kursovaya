@@ -1,0 +1,6 @@
+[submodule "tools/gate"]
+	path = tools/gate
+	url = git://github.com/hunter-packages/gate.git
+[submodule "tools/polly"]
+	path = tools/polly
+	url = git://github.com/ruslo/polly.git
