@@ -294,8 +294,8 @@ hugeint hugeint::operator=(const int b)
 
   if (b == 0)
   {
-    for (unsigned int i = 0; i < maxSize; i++)
-      number[i] = 0;
+    for (unsigned int a = 0; a < maxSize; a++)
+      number[a] = 0;
     return *this;
   }
 
@@ -375,7 +375,7 @@ hugeint hugeint::operator+(const hugeint &obj)
     if (!positive && !obj.positive)
       temp.positive = false;
   }
-  else
+  else {
     if ((!positive && obj.positive) || (positive && !obj.positive))
     {
       if (!isAbsBigger(obj))
@@ -433,7 +433,7 @@ hugeint hugeint::operator+(const hugeint &obj)
           temp.positive = false;
       }
     }
-
+  }
 
     temp.removeSpace();
     return temp;
