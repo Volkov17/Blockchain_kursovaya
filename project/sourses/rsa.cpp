@@ -1,5 +1,5 @@
 
-#include "rsa.h"
+#include "rsa.hpp"
 
 
 //key length (decimal digits)
