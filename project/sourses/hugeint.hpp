@@ -10,7 +10,7 @@
 #include <string>
 #include <cmath>
 #include <cstdlib>
-#include "exceptions.h"
+#include "exceptions.hpp"
 
 
 using namespace std;
