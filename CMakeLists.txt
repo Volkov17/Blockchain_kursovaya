@@ -32,11 +32,11 @@ find_package(Boost CONFIG REQUIRED date_time)
 
 add_executable(Blockchain_kursovaya project/main.cpp
                project/server/main_server.cpp
-               project/sourses/Block.h project/sourses/Block.cpp project/sourses/Sha256.cpp project/sourses/Sha256.h 
-               project/sourses/Blockchain.h project/sourses/Blockchain.cpp  project/sourses/trusted_comp.h 
-               project/sourses/trsuted_comp.cpp project/sourses/rsa.h project/sourses/hugeint.h  
-               project/sourses/cryptkey.h project/sourses/exceptions.h project/sourses/hugeint.cpp 
-               project/sourses/rsa.cpp project/sourses/client.h)
+               project/sourses/Block.hpp project/sourses/Block.cpp project/sourses/Sha256.cpp project/sourses/Sha256.hpp 
+               project/sourses/Blockchain.hpp project/sourses/Blockchain.cpp  project/sourses/trusted_comp.hpp 
+               project/sourses/trsuted_comp.cpp project/sourses/rsa.hpp project/sourses/hugeint.hpp  
+               project/sourses/cryptkey.hpp project/sourses/exceptions.hpp project/sourses/hugeint.cpp 
+               project/sourses/rsa.cpp project/sourses/client.hpp)
 
 
 target_link_libraries(Blockchain_kursovaya GTest::main Boost::date_time)
