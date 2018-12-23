@@ -2,10 +2,10 @@
 #include <ctime>
 #include <vector>
 
-#include "trusted_comp.h"
-#include "Block.h"
-#include "Blockchain.h"
-#include "client.h
+#include "trusted_comp.hpp"
+#include "Block.hpp"
+#include "Blockchain.hpp"
+#include "client.hpp"
 
 
 int main() {
