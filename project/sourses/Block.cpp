@@ -45,8 +45,8 @@ std::string Block::get_hash_of_trans (){
     std::vector <std::string> array_of_hash2;
     for (auto it = trans.begin(); it != trans.end(); ++it) {
         std::string str_hash_trans = it->sender + it->recipient + std::to_string(it->amount);
-        std::string hash_trans = sha256(str_hash_trans);
-        array_of_hash2.push_back(hash_trans);
+        std::string hash_trans1 = sha256(str_hash_trans);
+        array_of_hash2.push_back(hash_trans1);
     }
     for (auto it = array_of_hash2.begin() ; it != array_of_hash2.end() ; ++it){
         hash_trans += *it ;
