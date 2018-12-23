@@ -4,9 +4,9 @@
 
 #include <iostream>
 #include <vector>
-#include "Block.h"
-#include "trusted_comp.h"
-#include "rsa.h"
+#include "Block.hpp"
+#include "trusted_comp.hpp"
+#include "rsa.hpp"
 
 
 
