@@ -13,8 +13,8 @@
 #include <boost/date_time/posix_time/posix_time_io.hpp>
 #include <boost/date_time/posix_time/posix_time_types.hpp>
 
-#include "Sha256.h"
-#include "hugeint.h"
+#include "Sha256.hpp"
+#include "hugeint.hpp"
 
 
 
