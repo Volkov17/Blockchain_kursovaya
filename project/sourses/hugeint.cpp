@@ -1,5 +1,5 @@
 
-#include "hugeint.h"
+#include "hugeint.hpp"
 
 
 hugeint::hugeint(): currentSize(0),  maxSize(10), positive(true)
