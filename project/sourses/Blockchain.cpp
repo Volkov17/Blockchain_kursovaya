@@ -65,15 +65,10 @@ bool Blockchain::checking_signature () {
         std::string str3 = rsa::decrypt(c,privateKey1);
         std::string test_hash = (str1 + str2) + str3;
         if (test_hash == (*it).get_hash_of_trans()) {
-            // return 1;
-            std::cout << "good" <<std::endl;
-        }
-        else { if ( test_hash == (*it).get_hash_of_trans((*it).get_trans())){
-                std::cout << "good x2" <<std::endl;
-
-            }
+            return 1;
         }
     }
+    return 0;
 }
 
 bool Blockchain::valid_chain(){
