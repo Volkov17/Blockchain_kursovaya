@@ -24,7 +24,5 @@ addons:
   before_script:
   - sudo apt-get install -y libsndfile1-dev libxrandr-dev libudev-dev libopenal-dev build-essential
 
-//script:
-//  - ./console build
 script:
 - ./executable
