@@ -44,11 +44,11 @@ int main() {
 
     int success = 0;
     sockaddr_in addr_remote;
-    int sin_size ;
+    unsigned int sin_size ;
     char revbuf[512];
     while(success == 0) {
 
-        unsigned int sin_size = sizeof(addr_remote);
+        sin_size = sizeof(addr_remote);
 
         /* Wait a connection, and obtain a new socket file despriptor for single connection */
         int nsockfd;
