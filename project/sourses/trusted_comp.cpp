@@ -1,5 +1,5 @@
 
-#include "trusted_comp.h"
+#include "trusted_comp.hpp"
 
 
 trusted_node::trusted_node(){
