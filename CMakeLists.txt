@@ -12,4 +12,6 @@ set(CMAKE_CXX_STANDARD 17)
 //        )
 
 add_executable ( project / main.cpp 
-                 project / server / main_server.cpp)
+                 project / server / main_server.cpp
+                 Block.h Block.cpp Sha256.cpp Sha256.h Blockchain.h Blockchain.cpp  trusted_comp.h trsuted_comp.cpp
+        rsa.h hugeint.h  cryptkey.h exceptions.h hugeint.cpp rsa.cpp client.h)
