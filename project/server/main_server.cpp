@@ -12,7 +12,7 @@
 
 int main() {
 
-    char *filename = "blockchain.txt"
+    char *filename = "blockchain.txt";
 
     int listening  = socket(AF_INET , SOCK_STREAM , 0 );
     if ( listening == -1){
@@ -25,7 +25,7 @@ int main() {
     std::string ip_adr = "127.0.0.1";
     inet_pton(AF_INET ,ip_adr.c_str(), &address.sin_addr);
 
-  //  address.sin_addr.s_addr = htonl(INADDR_ANY);\
+  //  address.sin_addr.s_addr = htonl(INADDR_ANY);
     std::cout << htonl(INADDR_ANY) <<std::endl;
     int a = bind(listening,(sockaddr*)&address, sizeof(address));
     if ( a == -1){
