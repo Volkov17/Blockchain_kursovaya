@@ -12,9 +12,9 @@
 #include "Block.h"
 //#include "Blockchain.h"
 
-#include "cryptkey.h"
-#include "rsa.h"
-#include "hugeint.h"
+#include "cryptkey.hpp"
+#include "rsa.hpp"
+#include "hugeint.hpp"
 
 
 class trusted_node {
