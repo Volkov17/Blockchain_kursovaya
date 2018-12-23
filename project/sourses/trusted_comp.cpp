@@ -9,7 +9,7 @@ trusted_node::trusted_node(){
     this -> publicKey = publicKey1;
     publicKey.saveToFile("public_key_for_coin.txt");
     privateKey.saveToFile("private_key_for_trustedNode.txt");
-};
+}
 
 void trusted_node::write_to_file (const char *in1 , const std::string &str_h){
     std::ofstream out;
