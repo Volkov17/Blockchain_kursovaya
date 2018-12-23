@@ -1,6 +1,6 @@
 #include <cstring>
 #include <fstream>
-#include "Sha256.h"
+#include "Sha256.hpp"
 
 
 const unsigned int SHA256::sha256_k[64] = //UL = uint32
