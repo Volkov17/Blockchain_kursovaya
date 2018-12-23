@@ -12,7 +12,7 @@
 
 int main() {
 
-    char *filename = "blockchain.txt";
+    char *filename = "blockchain.txt"
 
     int listening  = socket(AF_INET , SOCK_STREAM , 0 );
     if ( listening == -1){
