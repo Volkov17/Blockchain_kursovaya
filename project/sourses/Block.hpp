@@ -65,6 +65,6 @@ public:
     hugeint get_part_adr3();
     std::vector <transaction> get_trans();
     void print_trans ();
-    void print_trans( const char *filename , Block &block);
+//    void print_trans( const char *filename , Block &block);
 };
 #endif //BLOCKCHAIN_KURS_BLOCKCKAIN_H
