@@ -41,3 +41,7 @@ add_executable(Blockchain_kursovaya project/main.cpp
 
 target_link_libraries(Blockchain_kursovaya GTest::main Boost::date_time)
 
+file(GLOB_RECURSE SERVER_SOURCES project/server/msin_server.cpp)
+
+add_executable(server ${SERVER_SOURCES})
+
