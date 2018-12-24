@@ -52,11 +52,11 @@ target_include_directories(Blockchain_kursovaya
   ${Boost_INCLUDE_DIR}
 )
 
-target_link_libraries(tests
-	PUBLIC
-	GTest::main
-	Boost::date_time
-)
+#target_link_libraries(tests
+#	PUBLIC
+#	GTest::main
+#	Boost::date_time
+#)
 
 #target_link_libraries(Blockchain_kursovaya
 #                      GTest::main 
