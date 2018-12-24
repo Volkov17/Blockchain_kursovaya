@@ -46,6 +46,7 @@ target_link_libraries(Blockchain_kursovaya
 file(GLOB_RECURSE SERVER_SOURCES project/server/main_server.cpp)
 add_executable(server ${SERVER_SOURCES})
 target_link_libraries (Blockchain_kursovaya
+                      project/server/main_server.cpp
                       GTest::main 
                       Boost::date_time)
 
