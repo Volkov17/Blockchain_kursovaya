@@ -116,9 +116,14 @@ const char * Blockchain::chain_to_file (){
             Block currentBlock = *it;
             out << "Block == " << "Index " << currentBlock.get_index()  << "\n";
             out << "Time :"   <<  currentBlock.get_time() << "\n"    ;
-            //out << "trans " << currentBlock.print_trans();
-            currentBlock.print_trans(filename , *it);
-            // for (auto it1 = it-> ; )
+            std::vector <transaction> transactions = currentBlock.get_trans();
+            for (auto it1 = transactions.begin(); it1 != transactions.end(); ++it1) {
+                out << "\n";
+                out << " Amount : " << it1->amount << "\n";
+                out << " Sender : " << it1->sender << "\n" ;
+                out << " Recipient :" << it1->recipient << "\n";
+                out << "\n";
+            }
             out << "address " << currentBlock.get_address()  << "\n"  ;
             out << "hash "    << currentBlock.get_hash()   << "\n"    ;
             out << "prevHash "<< currentBlock.get_prev_hash() << "\n" ;
