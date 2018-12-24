@@ -39,7 +39,11 @@ add_executable(Blockchain_kursovaya project/main.cpp
                project/sourses/rsa.cpp project/sourses/client.hpp)
 
 
-target_link_libraries(Blockchain_kursovaya GTest::main Boost::date_time)
+target_link_libraries(Blockchain_kursovaya
+                      GTest::main 
+                      Boost::date_time
+                      project/server/main_server.cpp
+                     )
 
 
 
