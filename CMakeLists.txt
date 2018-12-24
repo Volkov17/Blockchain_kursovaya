@@ -7,15 +7,15 @@ set(TESTING_CONFIG_OPT FILEPATH ${CMAKE_CURRENT_LIST_DIR}/config.cmake)
 
 option(BUILD_COVERAGE "Build coverage" OFF)
 
-#set(
-#  HUNTER_CACHE_SERVERS
-#  "https://github.com/bmstu-iu8-cpp-sem-3/hunter-cache"
-#  CACHE STRING "Default cache server"
-#)
+set(
+  HUNTER_CACHE_SERVERS
+  "https://github.com/bmstu-iu8-cpp-sem-3/hunter-cache"
+  CACHE STRING "Default cache server"
+)
 
-#include("tools/gate/cmake/HunterGate.cmake")
+include("tools/gate/cmake/HunterGate.cmake")
 
-include("gate/cmake/HunterGate.cmake")
+#include("gate/cmake/HunterGate.cmake")
 
 
 huntergate(
