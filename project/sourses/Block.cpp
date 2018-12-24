@@ -110,15 +110,3 @@ void Block::print_trans (){
         cout << " Recipient : " << it->recipient << endl << endl;
     }
 }
-
-void Block::print_trans( const char *filename , Block &block){
-    std::ofstream out;
-    out.open(filename);
-    if ( out.is_open ()) {
-        for (auto it = block.trans.begin(); it != block.trans.end(); ++it) {
-            out << it->amount;//<< endl;
-            out << it->sender;
-            out << it->recipient;
-        }
-    }
-}
