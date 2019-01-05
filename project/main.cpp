@@ -88,7 +88,6 @@ int main() {
     while (success == 0) {
 
         unsigned int sin_size = sizeof(addr_remote);
-        /* Wait a connection, and obtain a new socket file despriptor for single connection */
         int nsockfd;
         if ((nsockfd = accept(listening, (sockaddr *) &addr_remote, &sin_size)) == -1) { // принятие соеденений
             std::cerr << " error " << std::endl;
