@@ -36,18 +36,18 @@ hunter_add_package(Boost COMPONENTS date_time )
 find_package(Boost CONFIG REQUIRED date_time)
 
 add_executable(Blockchain_kursovaya project/main.cpp
-               project/server/main_server.cpp
+               project/client/main_client.cpp
                project/sourses/Block.hpp project/sourses/Block.cpp project/sourses/Sha256.cpp project/sourses/Sha256.hpp 
                project/sourses/Blockchain.hpp project/sourses/Blockchain.cpp  project/sourses/trusted_comp.hpp 
                project/sourses/trusted_comp.cpp project/sourses/rsa.hpp project/sourses/hugeint.hpp  
                project/sourses/cryptkey.hpp project/sourses/exceptions.hpp project/sourses/hugeint.cpp 
-               project/sourses/rsa.cpp project/sourses/client.hpp)
+               project/sourses/rsa.cpp )
 
 
 target_include_directories(Blockchain_kursovaya
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/sourses
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/server
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/client
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
   ${Boost_INCLUDE_DIR}
 )
