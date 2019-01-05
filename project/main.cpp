@@ -82,7 +82,6 @@ int main() {
 
     int success = 0;
     sockaddr_in addr_remote;
-    int sin_size;
     char revbuf[512];
 
     while (success == 0) {
